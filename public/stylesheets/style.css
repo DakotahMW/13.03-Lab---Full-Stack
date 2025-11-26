@@ -6,3 +6,67 @@ body {
 a {
   color: #00B7FF;
 }
+
+/* for title*/
+h1 {
+  text-decoration: underline;
+}
+
+/* css spec property for task list*/
+#taskList {
+  border: 5px double black;
+  padding: 40px;
+  width: 600px;
+}
+
+#taskList li {
+  border: 1px solid gray;
+  padding: 10px;
+  margin-top: 3px;
+}
+
+#taskList li span form {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid gray;
+}
+
+#taskList li > * {
+  margin-top: 3px;
+}
+
+#taskList li span input[type="text"] {
+  border: none;
+}
+
+#taskList li span input[type="text"]:hover, #taskList li span input[type="text"]:focus {
+  font-weight: bold;
+}
+
+/* css spec property for button*/
+button {
+  background: grey;
+  color: white;
+}
+
+button:hover {
+  background: lightgray;
+}
+
+button:active {
+  background: white;
+  color: black;
+}
+
+/* css spec property for add task section*/
+#addTask {
+  border: 5px double black;
+  padding: 20px;
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#addTask input[type="text"]:hover, #addTask input[type="text"]:focus{
+  font-weight: bold;
+}
