@@ -8,7 +8,7 @@ router.get('/', function(req, res, next){
       if (err) {
         console.error('Error fetching todos:', err);
         return res.status(500).send('Error fetching todos');
-      }s
+      }
       res.render('index', { title: 'My Simple TODO', todos: results });
     });
   } catch (error) {
